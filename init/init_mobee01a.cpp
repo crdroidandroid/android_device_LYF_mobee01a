@@ -38,7 +38,6 @@
 
 #include "vendor_init.h"
 #include "property_service.h"
-#include "util.h"
 
 char const *device;
 char const *family;
