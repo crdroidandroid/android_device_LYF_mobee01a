@@ -36,8 +36,8 @@
 #include <android-base/properties.h>
 #include <android-base/strings.h>
 
-#include "vendor_init.h"
 #include "property_service.h"
+#include "vendor_init.h"
 
 char const *device;
 char const *family;
