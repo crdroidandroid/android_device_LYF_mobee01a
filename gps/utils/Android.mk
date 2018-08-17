@@ -59,4 +59,6 @@ LOCAL_MODULE := libgps.utils
 
 LOCAL_MODULE_TAGS := optional
 
+LOCAL_VENDOR_MODULE := true
+
 include $(BUILD_SHARED_LIBRARY)

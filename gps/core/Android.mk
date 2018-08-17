@@ -7,6 +7,10 @@ LOCAL_MODULE_OWNER := qcom
 
 LOCAL_MODULE_TAGS := optional
 
+ifeq ($(BOARD_VENDOR_QCOM_LOC_PDK_FEATURE_SET),true)
+LOCAL_CFLAGS += -DPDK_FEATURE_SET
+endif
+
 LOCAL_SHARED_LIBRARIES := \
     liblog \
     libutils \
@@ -42,4 +46,9 @@ LOCAL_COPY_HEADERS:= \
     loc_core_log.h \
     LocAdapterProxyBase.h
 
+<<<<<<< HEAD
+=======
+LOCAL_VENDOR_MODULE := true
+
+>>>>>>> 09cfbbd9... wt88047: gps: Move GPS modules to vendor
 include $(BUILD_SHARED_LIBRARY)
